@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<!-- Project for Web Development Foundations EUP1, WGU, for IT- Software BS degree, by Jerome M. Griffith -->
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8" /> 
+	<meta name="author" content="Jerome M. Griffith" />
+	<meta name="keywords" content="HTML, CSS, JavaScript, Java, SQL, PL-SQL, JSP, database, dba, Graphic Design, Web Design, Web Development, Information Systems, Designer, Artist, Jerome Griffith, Jerome Matiyas, web development, web technologies, computer science, IT, Information Technology, computer information systems, software, developer" /> 
+	<meta name="description" content="This web page features my portfolio of web design and development skills. Programs and technologies used are, HTML, CSS, JavaScript, PHP, Java, SQL, PL-SQL, Dreamweaver, PhotoShop, GIMP, Illustrator, Inkscape, InDesign, Drawing, Pen and Ink, and Color pencils." />
+	<title> PINEVERGREEN Studios | Portfolio </title>
+	
+
+	<link rel="stylesheet" type="text/css" href="pine.css" /> 
+	<!-- Add jQuery library -->
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="../lib/jquery-1.10.1.min.js"></script> 
+
+	<!-- Add mousewheel plugin (this is optional)  -->
+	<script type="text/javascript" src="../lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="../source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="../source/jquery.fancybox.css?v=2.1.5" media="screen" /> 
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="../source/helpers/jquery.fancybox-buttons.css?v=1.0.5" /> 
+	<script type="text/javascript" src="../source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+	<!-- Add Thumbnail helper (this is optional)-->
+	<link rel="stylesheet" type="text/css" href="../source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" /> 
+	<script type="text/javascript" src="../source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	<!-- Add Media helper (this is optional)
+	<script type="text/javascript" src="../source/helpers/jquery.fancybox-media.js?v=1.0.6"></script> -->
+
+	
+<!-- Begin Fancybox script, fancyapps.com/fancybox -->
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+			 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			 */
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+			/*
+			 *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+			*/
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+
+			/*
+			 *  Open manually
+			 */
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+
+
+		});
+	</script>
+	<style type="text/css">
+		.fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #222;
+		}
+
+		body {
+			max-width: 700px;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+
+<body>
+
+<div id="container">
+
+	<header id="banner">
+		
+<figure id="pinestudioLogo"> 
+		<a href="index.html"><img class="pinestudioLogo" src="images/pine-logo.png" alt="Pinevergreen Studios Logo" title="Pinevergreen Studio Logo"/></a> 
+</figure>  
+
+		<div id="titlePine">
+			<h1> PINEVERGREEN STUDIOS</h1>
+			<h2> Jerome Griffith's Portfolio </h2>
+			<p> <em>Web Development and Graphic Design</em> </p>
+		</div>
+			
+	</header> 
+	<nav id="pine-menu">
+    
+	<ul>
+		<li> <a href="index.html">Home</a></li>
+		<li> <a href="objectives.html">Objectives</a></li>
+		<li> <a href="experience.html">Experience</a> </li>
+		<li> <a href="portfolio.html" class="current">Portfolio</a> </li>
+		<li> <a href="education.html">Education</a> </li>
+		<li> <a href="mekonnen.html">Mekonnen</a> </li>
+		<li> <a href="community.html">Community</a> </li>
+ 	</ul>
+	</nav>
+	
+	<section id="folioRack">		
+
+		<article class="folioRack">
+			<hgroup>
+				<h1> Mekonnen Epic Websites</h1>
+				<h2> HTML, CSS, CMS, Flash, jQuery, PhotoShop, GIMP</h2> 
+			</hgroup>
+			
+	<p class="clear"> </p> 
+	
+<!-- Mekonnen Portfolio content -->
+
+
+<div id="outer">
+    	
+	<section>
+	<article style="margin-left: 23px; margin-top: 2px;">
+
+		
+<figure  style="margin-top: 0px;" > 
+ <!-- fancyapps images 	
+  
+
+		<a class="fancybox" href="folio/mekonnen-web02.png" data-fancybox-group="gallery" title="Mekonnen Epic Website">
+		<a class="fancybox" href="folio/mekonnen-cafepress1.png" data-fancybox-group="gallery" title="Mekonnen Epic: Cafepress Online Store-Customized Template using HTML and CSS">
+		<a class="fancybox" href="folio/mekonnen-tablet.png" data-fancybox-group="gallery" title="Mekonnen Epic On Modile Tablet Device #1">
+		<a class="fancybox" href="folio/mekonnen-tablet01.png" data-fancybox-group="gallery" title="Mekonnen Epic  On Modile Tablet Device #2">
+		<a class="fancybox" href="folio/mekonnen-iphone.png" data-fancybox-group="gallery" title="Mekonnen Epic On iPhone">
+		<a class="fancybox" href="folio/mekonnen-android.png" data-fancybox-group="gallery" title="Mekonnen Epic On Android Phone"> 
+		<a class="fancybox" href="folio/mekonnen-web01.png" data-fancybox-group="gallery" title="Mekonnen Epic Website">
+     -->
+		<!-- Main image 
+		<img src="folio/mekonnen-web01.png"   alt="Mekonnen Epic Website" title="Mekonnen Epic Website" style="width:575px; 370px; margin-top:0px;" /></a>
+		-->
+		
+<!-- fancyapps fancybox with button helpers -->
+	<a class="fancybox-button" rel="fancybox-button" href="http://farm4.staticflickr.com/3787/9028269192_9b4ddf345d_b.jpg" title="Tolpis barbata (mariluzpicado)">
+	<img src="http://farm4.staticflickr.com/3787/9028269192_9b4ddf345d_m.jpg" alt="" />
+	</a>
+	<a class="fancybox-button" rel="fancybox-button" href="http://farm4.staticflickr.com/3745/8971419780_cb88b22947_b.jpg" title="(dSavin)">
+	<img src="http://farm4.staticflickr.com/3745/8971419780_cb88b22947_m.jpg" alt="" />
+	</a>
+	<a class="fancybox-button" rel="fancybox-button" href="http://farm9.staticflickr.com/8522/8478415115_152c6f5e55_b.jpg" title="a ride in blue? (cembayir_photography)">
+	<img src="http://farm9.staticflickr.com/8522/8478415115_152c6f5e55_m.jpg" alt="" />
+	</a>
+	<a class="fancybox-button" rel="fancybox-button" href="http://farm9.staticflickr.com/8366/8483546751_86494ae914_b.jpg" title="reedit... (h_di)">
+	<img src="http://farm9.staticflickr.com/8366/8483546751_86494ae914_m.jpg" alt="" />
+	</a>		
+<!--		-->	
+	
+	
+	
+	<h3>Button helper</h3>
+	<p>
+		<a class="fancybox-buttons" data-fancybox-group="button" href="../Website/folio/mekonnen-web01.png"><img src="../Website/folio/mekonnen-web01.png" alt="" /></a>
+
+		<a class="fancybox-buttons" data-fancybox-group="button" href="2_b.jpg"><img src="2_s.jpg" alt="" /></a>
+
+		<a class="fancybox-buttons" data-fancybox-group="button" href="3_b.jpg"><img src="3_s.jpg" alt="" /></a>
+
+		<a class="fancybox-buttons" data-fancybox-group="button" href="4_b.jpg"><img src="4_s.jpg" alt="" /></a>
+	</p>
+
+			<figcaption>Mekonnen Epic Treasures </figcaption>
+		</figure> 
+
+	<em> January 2010 to Present | Baltimore, MD USA</em> 
+	<br/>
+			
+	<p> 
+			<ul>
+			<li>Designer and developer of personal websites of unique art and story and online store utilizing Wix.com Content Management System (CMS), Cafepress.com, HTML, CSS, and JavaScript. </li>
+			<li>Illustrated all artwork with pen & ink and color pencils. Colorized, effects and optimized images for web with PhotoShop and GIMP. </li>
+			<li>Used Web Marketing on social media sites, SEO, Google+ and AdWords, with business cards, flyers, presentations and art displays with enthusiastic results. </li>
+			<li>Alternate mini website also created for mobile devices. </li> 
+			</ul>
+			<ul>
+			<li><span style="color: #2F4F4F; font-weight: bold;">Flash,CMS URL:</span> <a href="http://www.mekonnenepic.com" target="_blank">mekonnenepic.com</a> </li>
+			<li><span style="color: #2F4F4F; font-weight: bold;">Store URL:</span> <a href="http://www.cafepress.com/mekonnenepic" target="_blank">cafepress.com/MekonnenEpic</a> <br/> </li>
+			<li><span style="color: #2F4F4F; font-weight: bold;">Mobile:</span> <a href="http://m.mekonnenepic.com" target="_blank">m.mekonnenepic.com </a><br/></li>
+			</ul>
+			</p>
+			
+	</article> 
+	</section>
+	
+  
+    <p class="clear"> </p> 
+    
+</div> <!-- close outer div id -->
+	
+	</article>
+	
+	</section>
+
+	<!-- Sidebar details -->
+	<aside id="folioPage">
+	
+		<hgroup>
+			<h3>Web Technology Skills:</h3>
+			</hgroup>
+			HTML5/XHTML<br />
+			CSS3/CSS<br/>
+			CMS<br/>
+			JavaScript<br/>
+			Branding/Logos<br/>
+			Web Graphics <br/>					
+			Wiki Macros<br/>
+			XML  <br/>
+			
+	</aside>
+	
+		<div class="clear"> </div>
+	
+	</div> <!-- close container -->	
+	
+	<footer>
+	
+	<div id="footer">
+
+			<div> <a href="http://www.ciwcertified.com/certifications/Web_Design_Series/design.php" target="_blank"><img id="ciw-web" src="images/ciw-webdesign_cert.jpg" alt="CIW Web Design Specialist" title="CIW  Web Design Specialist Certified, September 2013"></a></div> 
+			<div> <a href="http://www.ciwcertified.com/Certifications/Web_Foundations_Series/associate.php" target="_blank"><img id="ciw-web" src="images/ciw-webfnd_cert.jpg" alt="CIW Web Foundations Logo" title="CIW Web Foundations Associate Certified, July 2013"></a></div> 
+			
+			<div id="copyright"> Copyright &copy; 2013 Jerome M. Griffith at Pinevergreen Studios. </div>
+		
+		
+		<div id="social-all">
+			<ul id="social">
+			<!--List for social media links. -->
+			<li> <a class="facebook-button" href="https://www.facebook.com/jerome.m.griffith" target="_blank" alt="Facebook icon" title="Jerome on Facebook"> </a></li> 
+			<li> <a class="linkedin-button" href="http://www.linkedin.com/pub/jerome-griffith/31/3a3/559" target="_blank" alt="LinkedIn icon" title="Jerome on LinkedIn"></a></li>
+			<li> <a class="wordpress-button" href="http://pinevergreenstudios.wordpress.com" target="_blank"  alt="WordPress icon" title="Pinevergreen on Wordpress"></a></li>
+			<li> <a class="youtube-button" href="http://www.youtube.com/watch?v=VWAv4OlD2k4&list=PLEA61A9629E696091"  target="_blank" alt="YouTube icon" title="Jerome on YouTube"> </a></li>
+			<li> <a class="email-button" href="mailto:pinevergreenstudios@gmail.com" target="_blank" alt="email icon" title="Email"> </a></li>
+			</ul>
+			
+			
+		<div id="sitelock"> 
+			<a href="#" onclick="window.open('https://www.sitelock.com/verify.php?site=pinevergreenstudios.com','SiteLock','width=600,height=600,left=160,top=170');" >
+			<img alt="website security" title="SiteLock"  src="//shield.sitelock.com/shield/pinevergreenstudios.com"/>
+			</a>
+		</div>
+			
+			
+		</div> 
+		
+
+	</div> 
+
+		
+	</footer>
+		
+</body>
+</html>

@@ -1,0 +1,49 @@
+/* CSS Template for Pinevergreen Studio Projects */ 
+/* The connect to this style sheet, place the following code after <title> code: 
+<link rel="stylesheet" type="text/css" href="famvistyl.css"/>
+ */
+
+Body
+{
+    background: black; 
+	
+	scrollbar-face-color:Green;
+    scrollbar-arrow-color:White;
+    scrollbar-track-color:Silver;
+    scrollbar-shadow-color:Gray;
+
+}
+
+h1{ 
+	color:Black;
+	font-family:san-serif;
+	font-style:italic; 
+	font-weight:bold;
+	
+	}
+h2{ 
+	color:Black;
+	font-family:georgia, "times new roman", serif;
+	font-style:normal; 
+	}
+h3{
+	color:navy;
+	font-family:sans-serif;
+	}
+	
+p.one {font-size:12pt;}
+/* <p class="one"> Text,</p> */
+	
+li.a { 
+	list-stlye-type:none, disc, circle, square, &hearts;
+	list-style: inside circle; 
+	list-style-image: url(images/bulletpoint.gif);
+	list-style-position:inside, outside;
+	marker-offset: 2em, 5en; /* not supported by IE 6 or Netscape 4 */
+	}
+
+a:link{color:white} 
+a:visited{color:gray} 
+a:hover{color:gray; background-color:none} 
+a:active{color:silver} 
+ 

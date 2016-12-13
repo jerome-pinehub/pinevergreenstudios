@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8" /> 
+	<meta name="author" content="Jerome M. Griffith" />
+	<meta name="keywords" content="Graphic Design, Web Design, Web Development, Artist, painting, Freelance, Jerome Griffith, web technologies, IT, Information Technology, computer, data merge, macros, wiki, desktop publishing, Associate of Applied Sciences, Bachelor of Science" /> 
+	<meta name="description" content="Jerome M. Griffith is currently pursuing a Bachelor of Science degree in Information Technology (IT) provides a solid foundation in computer information systems and technologies, including programming, web systems, project management, networks, operating systems, databases, and security." />
+		
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" > -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	
+	
+	<title> PINEVERGREEN Studios | Education </title>
+	
+	<link rel="stylesheet" type="text/css" href="pine.css" /> 
+   <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" /> 
+ 
+ <!-- styles sheets for jquery accordion -->
+  <link href="css/custom-theme/jquery-ui-1.9.2.custom.css" rel="stylesheet"> 
+  
+<!--	<script src="http://code.jquery.com/jquery-1.9.1.js"></script> 
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>  -->
+ 
+	<script src="js/jquery-1.8.3.js"></script>
+	<script src="js/jquery-ui-1.9.2.custom.js"></script>
+	
+  <link rel="stylesheet" href="/resources/demos/style.css" /> 
+  
+  <script>
+  $(function() {
+    $( "#accordion" ).accordion({
+      collapsible: true
+    });
+  });
+  
+  </script> 
+  
+  	<script>
+	$(function() {
+		
+		$( "#accordion" ).accordion();
+		
+
+		
+		var availableTags = [
+			"ActionScript",
+			"AppleScript",
+			"Asp",
+			"BASIC",
+			"C",
+			"C++",
+			"Clojure",
+			"COBOL",
+			"ColdFusion",
+			"Erlang",
+			"Fortran",
+			"Groovy",
+			"Haskell",
+			"Java",
+			"JavaScript",
+			"Lisp",
+			"Perl",
+			"PHP",
+			"Python",
+			"Ruby",
+			"Scala",
+			"Scheme"
+		];
+		$( "#autocomplete" ).autocomplete({
+			source: availableTags
+		});
+		
+
+		
+		$( "#button" ).button();
+		$( "#radioset" ).buttonset();
+		
+
+		
+		$( "#tabs" ).tabs();
+		
+		
+		$( "#dialog" ).dialog({
+			autoOpen: false,
+			width: 500,
+			buttons: [
+		/*		{
+					text: "Ok",
+					click: function() {
+						$( this ).dialog( "close" );
+					}
+				},  */
+				
+				{
+					text: "Close",
+					click: function() {
+						$( this ).dialog( "close" );
+					}
+				}
+			]
+		});
+		
+	
+		$( "#dialog2" ).dialog({
+			autoOpen: false,
+			width: 500,
+			buttons: [
+			/*	{
+					text: "Ok",
+					click: function() {
+						$( this ).dialog( "close" );
+					}
+				},  */ 
+				
+				{
+					text: "Close",
+					click: function() {
+						$( this ).dialog( "close" );
+					}
+				}
+			]
+		});
+		
+		$( "#dialog3" ).dialog({
+			autoOpen: false,
+			width: 500,
+			buttons: [
+			/*	{
+					text: "Ok",
+					click: function() {
+						$( this ).dialog( "close" );
+					}
+				}, */ 
+				
+				{
+					text: "Close",
+					click: function() {
+						$( this ).dialog( "close" );
+					}
+				}
+			]
+		});
+							
+
+		// Link to open the dialog
+		$( "#dialog-link" ).click(function( event ) {
+			$( "#dialog" ).dialog( "open" );
+			event.preventDefault();
+		});
+		
+
+		// Link to open the dialog2
+		$( "#dialog-link2" ).click(function( event ) {
+			$( "#dialog2" ).dialog( "open" );
+			event.preventDefault();
+		});
+
+
+		// Link to open the dialog3
+		$( "#dialog-link3" ).click(function( event ) {
+			$( "#dialog3" ).dialog( "open" );
+			event.preventDefault();
+		});
+				
+		
+		$( "#datepicker" ).datepicker({
+			inline: true
+		});
+		
+
+		
+		$( "#slider" ).slider({
+			range: true,
+			values: [ 17, 67 ]
+		});
+		
+
+		
+		$( "#progressbar" ).progressbar({
+			value: 20
+		});
+		
+
+		// Hover states on the static widgets
+		$( "#dialog-link, #icons li" ).hover(
+			function() {
+				$( this ).addClass( "ui-state-hover" );
+			},
+			function() {
+				$( this ).removeClass( "ui-state-hover" );
+			}
+		);
+		// Hover states on the static widgets
+		$( "#dialog-link2, #icons li" ).hover(
+			function() {
+				$( this ).addClass( "ui-state-hover" );
+			},
+			function() {
+				$( this ).removeClass( "ui-state-hover" );
+			}
+		);
+				
+		
+	});
+	
+	</script>
+	
+	
+	<style>
+	body{
+		font: 82.5% "Trebuchet MS", sans-serif;
+		margin: 1px;
+	}
+	.demoHeaders {
+		margin-top: 2em;
+	}
+	#dialog-link {
+	/*	padding: .4em 1em .4em 20px; */
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	
+	#dialog-link2 {
+	/*	padding: .4em 1em .4em 20px; */
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link2 span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	
+	#dialog-link3 {
+	/*	padding: .4em 1em .4em 20px; */
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link3 span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	
+	#icons {
+		margin: 0;
+		padding: 0;
+	}
+	#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+	}
+	#icons span.ui-icon {
+		float: left;
+		margin: 0 4px;
+	}
+	</style>
+		
+</head>
+
+<body>
+
+
+
+	<header id="banner">
+		<div id="banner-container">
+		<figure id="pinestudioLogo"> 
+		<a href="index.html"><img class="pinestudioLogo" src="images/pine-logo.png" alt="Pinevergreen Studios Logo" title="Pinevergreen Studio Logo"/></a> 
+		</figure>  
+
+		<div id="titlePine">
+			<h1> PINEVERGREEN STUDIOS</h1>
+			<h2>Jerome Griffith's Educational Background</h2>
+			<p> <em>Web Design &amp; Development and Visual Communications</em> </p> 
+		</div>
+		</div>	
+</header> 
+
+<div id="container">
+
+	<nav id="pine-menu">
+    
+	<ul>
+		<li> <a href="index.html">Home</a></li>
+		<li> <a href="objectives.html">Objectives</a></li>
+		<li> <a href="experience.html">Experience</a> </li>
+		<li class="dropdown"> 	
+			<a href="portfolio.html" class="dropbtn">Portfolio</a> 	
+				<div class="dropdown-content">
+			
+				<a href="portfolio.html">Web Development</a> 
+				<a href="graphicdesign.html">Graphic Design</a> 
+			</div> 
+		</li>
+			
+		<li> <a href="education.html" class="current">Education</a> </li>
+		<li class="dropdown"> 
+			<a href="technologies.html" class="dropbtn">Technologies</a> 
+				<div class="dropdown-content">
+				<a href="security.html">Security&nbsp;Awareness</a> 
+				<a href="techwriting.html">Technical Writing</a> 
+			</div> 
+		</li>		
+		<li> <a href="community.html">Community</a> </li>
+ 	</ul>
+		<div class="clear"> </div>
+	</nav>
+
+	<div class="clear"> </div>
+
+	<section id="articles">		
+	
+		<article class="story">
+			
+			<hgroup>
+				<h1> EDUCATION</h1>
+				<h2> Bachelor of Science in Information Technology - Software Emphasis </h2>
+				<h3><a href="http://www.wgu.edu" target="_window" style="color:#010; font-weight:bold;">Western Governors University</a> </h3>
+			</hgroup> 
+			
+			<span style="color:#010; font-size:11pt;"> <em>April 2016 | Salt Lake City, Utah, USA</em></span>
+			
+			<p>The <a href="http://www.wgu.edu/online_it_degrees/programs" target="_window" style="color:#010; font-weight:bold;">Bachelor of Science in Information Technology (IT)</a> provides a solid foundation in computer information systems and technologies, including programming, web systems, project management, networks, operating systems, databases, and security. </p>
+			<p>Students seeking the <a href="http://www.wgu.edu/online_it_degrees/information_technology_degree_software" target="_window" style="color:#010; font-weight:bold;">BS IT—Software Emphasis</a> demonstrate additional competencies in this area by obtaining the Java Standard Edition 7 Programmer certification and passing the CIW Perl Fundamentals Exam.
+			<br/>
+			<span style="color:#010; font-size:8pt;"><em>Source: Program Guide Book, Bachelor of Science, IT - Software Emphasis. Page 1. Western Governors University, 2013.</em> </span> 
+			</p>
+		
+	</article> 
+	
+	<article> 
+<div id="accordion">
+
+  <h2>IT INDUSTRY CERTIFICATIONS </h2> 
+  <div style="background: #E6F0E6; color: #222222;">
+    		<ul>
+			<li><a href="https://www.youracclaim.com/badges/00213fec-16de-4ac3-be64-5284e6f054fe/public_url" target="_window" style="color:#010; font-weight:bold;">Oracle Java SE 7 Programmer 1,</a> <em> April 2016.</em> </li>	
+			
+			<li><a href="http://certification.comptia.org/getCertified/certifications/security.aspx" target="_window" style="color:#010; font-weight:bold;">CompTIA Security+,</a> <em> February 2015.</em> </li>	
+			
+			<li><a href="http://certification.comptia.org/getCertified/certifications/project.aspx" target="_window" style="color:#010; font-weight:bold;">CompTIA Project+,</a> <em> October 2015.</em> </li>				
+			
+			<li><a href="http://certification.comptia.org/getCertified/certifications/network.aspx" target="_window" style="color:#010; font-weight:bold;">CompTIA Network+,</a> <em> September 2014.</em> </li>	
+	
+			<li><a href="http://certification.comptia.org/getCertified/certifications/a.aspx" target="_window" style="color:#010; font-weight:bold;">CompTIA A+,</a> <em>April 2014.</em> </li>		
+
+			<li><a href="http://www.ciwcertified.com/Certifications/Web_Development_Series/development.php" target="_window" style="color:#010; font-weight:bold;">CIW Web Development Professional,</a> <em>April 2016.</em> </li>
+
+			<li><a href="http://www.ciwcertified.com/Certifications/Web_Development_Series/perl.php" target="_window" style="color:#010; font-weight:bold;">CIW Perl Specialist Certified,</a> <em>April 2016.</em> </li>
+			
+			<li><a href="http://www.ciwcertified.com/Certifications/Web_Development_Series/database_design.php" target="_window" style="color:#010; font-weight:bold;">CIW Database Design Certified,</a> <em>March 2015.</em> </li>
+			
+			<li><a href="http://www.ciwcertified.com/Certifications/Web_Development_Series/javascript.php" target="_window" style="color:#010; font-weight:bold;">CIW JavaScript Specialist Certified,</a> <em>November 2013.</em> </li>
+			<li><a href="http://www.ciwcertified.com/certifications/Web_Design_Series/design.php" target="_window" style="color:#010; font-weight:bold;">CIW Web Design Specialist Certified,</a> <em>September 2013.</em> </li>
+			<li><a href="http://www.ciwcertified.com/Certifications/Web_Foundations_Series/associate.php" target="_blank" style="color:#010; font-weight:bold;">CIW Web Foundations Associate Certified,</a> <em>July 3, 2013.</em> </li>		
+			<ul>
+				<li>CIW Internet Business Associate </li>
+				<li>CIW Site Development Associate </li>
+				<li>CIW Network Technology Associate </li>
+				</ul>
+				
+			<li><a href="https://www.microsoft.com/learning/en-us/exam-98-361.aspx" target="_window" style="color:#010; font-weight:bold;">MTA Software Development Fundamentals,</a> <em>April 2015.</em> </li>					
+			<li><a href="https://www.microsoft.com/learning/en-us/exam-98-365.aspx" target="_window" style="color:#010; font-weight:bold;">MTA Windows Server Administration Fundamentals,</a> <em>July 2014.</em> </li>	
+			<li><a href="https://www.microsoft.com/learning/en-us/exam-98-349.aspx" target="_window" style="color:#010; font-weight:bold;">MTA Windows Operating Systems Fundamentals,</a> <em>May 2014.</em> 
+			</li>	
+						
+			</ul>	
+	
+		<!--	<img src="images/ciw-webdesign_cert.jpg" alt="CIW Web Design Specialist Logo"  title="CIW Web Design Specialist" style="width:100px; height:100px; border: 0; float:left; margin:3px 5px 5px 0px;"/> -->
+
+		<a href="https://www.youracclaim.com/badges/00213fec-16de-4ac3-be64-5284e6f054fe/public_url" target="window"><img id="ciw-web" src="images/OracleJavaSE7Prog.jpg" alt="Oracle Java SE 7 Programmer 1" title="Oracle Java SE 7 Programmer 1" style="width:100px; height:50px; border: 0; float:left; margin:3px 5px 5px 0px;"/></a>	
+			
+		<a href="http://certification.comptia.org/getCertified/certifications/security.aspx" target="window"><img id="ciw-web" src="images/Security+_CE_small.jpg" alt="ComptTIA Security+ Certified" title="CompTIA Security+ Certified" 
+		style="width:100px; height:50px; border: 0; float:left; margin:3px 5px 5px 0px;"/></a>	
+
+		<a href="#" id="dialog-link3"><img src="images/ciw-javascript_sp.jpg" alt="CIW JavaScript Specialist" title="CIW JavaScript Specialist" style="width:50px; height:50px; border: 0; float:left; margin:3px 5px 5px 0px;"/></a>	
+	
+			<a href="#" id="dialog-link2"><img src="images/ciw-webdesign_cert.jpg" alt="CIW Web Design Specialist" title="CIW Web Design Specialist" style="width:50px; height:50px; border: 0; float:left; margin:3px 5px 5px 0px;"/></a>	
+			
+			<a href="#" id="dialog-link"><img src="images/ciw-webfnd_cert.jpg" alt="CIW Web Foundations Logo" title="CIW Web Foundations Associate" style="width:50px; height:50px; border: 0; float:left; margin:3px 5px 5px 0px;"/></a>	
+			
+			
+<p class="clear" /> 	
+		
+		<p>
+	<blockquote><h6> <em>(Proof of certification credentials are available upon request.)</em> </h6> </blockquote>
+		</p>	
+			<p class="clear" /> 
+ </div>
+ 
+ 
+  <h2>JAVA E-Commerce &amp; Oracle 9i Diplomas (2005)</h2>
+   <div style="background: #E6F0E6; color: #222222;">
+    	<strong>Rockwell University</strong><br/>
+			
+			<em> March 2004 to March 2005 | Calverton, Maryland USA</em> 
+	<p>	<strong>JAVA E-Commerce Application Project:</strong> A 3-tier E-Commerce online sales application. EJBs, Java Servlets, 
+			JSPs and XML were used to query and update the Oracle database using Apache Web 
+			and Tomcat Application Servers on Windows 2000 platform.<br/>
+			Project screen captures: <a href="http://www.pinevergreen.com/portfolio/offworld.html" target="_blank">Click here</a>.</p>
+ 	<p>	<strong>Oracle 9i Project:</strong> Newman Store Inventory (Oracle 9i SQL, PLSQL, Oracle Forms, Oracle Reports, 2004).<br/>
+			Project screen captures: <a href="http://www.pinevergreen.com/portfolio/oracle.html" target="_blank">Click here</a>.</p>
+ 
+ 
+	</div>
+ 
+  <h2>Associate of Applied Science in Interactive Design/Graphic Design (2001)</h2>
+  <div style="background: #E6F0E6; color: #222222;">
+	<strong>Community College of Baltimore County, Catonsville</strong><br/>
+	<em> September 1998 to July 2001 | Catonsville, Maryland  USA</em> <br/>
+    <p><strong>Relevant Course Work:</strong> Graphic Design, Website Design &amp; Publishing, Interactive Design, Flash Animation, Business Graphics, Computer Illustration, Drawing, Art Appreciation and Applied Algebra/Trigonometry.
+	</p>
+	<p>
+	<br/><strong>Honors:</strong><em> Magna Cum Laude | Dean's List </em>
+			<br/><strong>Activities and Societies:</strong> <em>Phi Theta Kappa </em>
+			</p>
+			
+	</div>
+ <h2>Vocational: Graphic Design Technician Course (1996)</h2>
+  <div style="background: #E6F0E6; color: #222222;">
+  <strong>John S. Donaldson Technical Institute (UTT) </strong><br/> 
+  <em> 1992 to 1996 | Port of Spain, Trinidad, West Indies</em> <br/> 
+  	<p><strong>Completed Courses: </strong>
+			<ul>
+			<li>Painting</li>
+			<li>Typography</li> 
+			<li>Visualizing for Graphic Communication</li> 
+			<li>Photography</li>
+			</ul>
+			</p>
+		</div>		
+</div> 	<!--  End of id= accordion  -->	
+	
+		</article>
+	</section>
+	
+	<aside>
+	
+	 <!--  CompTIA A+ -->
+ <!--  	<header><a href="http://certification.comptia.org/getCertified/certifications/a.aspx" target="_blank">
+	<img src="images/A+_small.jpg" alt="CompTIA A+ Certified" title="CompTIA A+ Certified" style="width:50px; height: 50px; border: 0; float:left; display: block; margin:9px 5px 5px 0px;"/>
+		<hgroup>
+			<h1>CompTIA A+ Certified</a></h1> 
+		</hgroup>
+		</header>
+		
+		<p class="clear" /> 
+		
+	 <!--  CIW JavaScript Specialist -->
+	<!-- <header><a href="http://www.ciwcertified.com/Certifications/Web_Development_Series/javascript.php" target="_blank">
+	<img src="images/ciw-javascript_sp.jpg" alt="CIW JavaScript Specialist" title="CIW JavaScript Specialist" style="width:50px; height: 50px; border: 0; float:left; display: block; margin:9px 5px 5px 0px;"/>
+		<hgroup>
+			<h1>CIW JavaScript Specialist Certified</a></h1> 
+		</hgroup>
+		</header>  -->
+		
+	 <!--  CIW Web Design Specialist -->
+	<!-- <header><a href="http://www.ciwcertified.com/certifications/Web_Design_Series/design.php" target="_blank">
+	 <img src="images/ciw-webdesign_cert.jpg" alt="CIW Web Design Specialist" title="CIW Web Design Specialist" style="width:50px; height: 50px; border: 0; float:left; display: block; margin:9px 5px 5px 0px;"/>
+		<hgroup>
+			<h1>CIW Web Design Specialist Certified</a></h1> 
+		</hgroup>
+		</header>  -->
+		
+	 <!-- CIW Web Foundations Associate -->
+	<!-- <header><a href="http://www.ciwcertified.com/Certifications/Web_Foundations_Series/associate.php" target="_blank">
+	 <img src="images/ciw-webfnd_cert.jpg" alt="CIW Web Foundations Logo" title="CIW Web Foundations Assosiate" style="width:50px; height: 50px; border: 0; float:left; display: block; margin:9px 5px 5px 0px;"/>
+		<hgroup>
+			<h1>CIW Web Foundation Associate Certified</a></h1>
+		</hgroup>
+		</header>
+		<p>
+			The <a href="http://www.ciwcertified.com/Certifications/Web_Foundations_Series/associate.php" target="_blank">CIW Web Foundations</a> series consist of three foundation courses and corresponding 
+			certification exams that teach and validate more than mere literacy skills. 
+			They have a unique understanding of Internet business, data networking and Web site design.<br />
+			<em>Source: CIW | Web Foundations Associates Are Skilled with Internet Technology. (2013). Retrieved from http://www.ciwcertified.com  </em>
+		</p>
+			-->
+	<section>	
+		 <!-- Add WGU logo here -->
+		<a href="http://www.wgu.edu" target="_blank">	
+		 <img src="images/wgu-logo.jpg" alt="Western Governors University" title="Western Governors University"  style="width:50px; height: 50px; border: 0; float:left; display: block; margin:10px 5px 5px 0px;"/></a>
+	 
+		
+			<h1> Western Governors University</h1>
+			<p>
+			At WGU, you earn your degree based on what you’ve learned, not how long you’ve spent in a classroom. 
+			We call it competency-based education, and it means you can move quickly through what you already know so 
+			you can focus on what you need to learn.<br />
+			<em>Source: WGU.edu Website (2013). Retrieved from http://www.wgu.edu</em>
+		</p>	
+		</section>
+
+		 <!-- Rockwell Univ did not have a logo  -->
+		 <section>
+			<h1> Rockwell University</h1>
+			<p>
+			<em>Rockwell University was bought out by <a href="http://www.apus.edu" target="_blank">American Public University Systems</a> (date unknown). </em><br/>
+			Expanding access to higher education with more than 170 affordable degrees and certificates 
+			to prepare students for service and leadership in a diverse and global society. <br />
+			<em>Source: American Public University Systems: Official Site (2013). Retrieved from http://www.apus.edu</em>
+		</p>	
+		</section>
+		<section>
+	<a href="http://www.ccbcmd.edu/" target="_blank">
+	<img src="images/ccbc-logo.jpg" alt="Community Colleges of Baltimore County, Catonsville" title="Community Colleges of Baltimore County, Catonsville" style="width:50px; height: 50px; border: 0; float:left; display: block; margin:9px 5px 5px 0px;"/>
+
+		<h1> Community Colleges of Baltimore County, Catonsville</h1></a> 
+			<p>
+			CCBC has more than 100 associate degree and certificate programs from which you can choose.<br />
+			<em>Source: About CCBC. (2013). Community Colleges of Baltimore County website. Retrieved from http://www.ccbcmd.edu/ccbc/index.html </em>
+			</p>	
+		</section>	
+		<section>	
+		<a href="http://www.utt.edu.tt" target="_blank">
+		<img src="images/utt-logo.jpg" alt="UTT, John S. Donaldson Technical Institute" title="UTT, John S. Donaldson Technical Institute" style="width:50px; height: 30px; border: 0; float:left; display: block; margin:9px 5px 5px 0px;"/>
+
+		<h1> UTT, John S. Donaldson Technical Institute</h1></a> 
+			<p>
+			The vision of UTT is to be the National Institution of higher learning and research for socio-economic and technological development.<br />
+			<em>Source: Vision and Mission. (2013). UTT Website. Retrieved from http://u.tt/index.php?page_key=23&expanddiv=divTable1_1&main=1 </em>
+
+			</p>	
+		<section>	
+			
+	</aside>
+	 <p class="clear"/> 
+	
+	</div> <!-- close container -->	
+	
+	<div class="clear"> </div>
+		
+	<footer>
+		
+	<div id="footer">
+		<div class="certlogos">
+			<div><a href="https://www.youracclaim.com/badges/00213fec-16de-4ac3-be64-5284e6f054fe/public_url" target="window"><img id="ciw-web" src="images/OracleJavaSE7Prog.jpg" alt="Oracle Java SE 7 Programmer 1" title="Oracle Java SE 7 Programmer 1" style="width:90px; height:40px; border: 0;"></a></div>	
+			
+			<div><a href="http://certification.comptia.org/getCertified/certifications/security.aspx" target="_window"><img id="ciw-web" src="images/Security+_CE_small.jpg" alt="ComptTIA Security+ Certified" title="CompTIA Security+ Certified, April 2014" style="width:90px; height: 40px; border: 0;"/></a></div> 
+			
+			<div> <a href="http://www.ciwcertified.com/" target="_blank"><img id="ciw-web" src="images/ciw-logo.jpg" alt="CIW | Certified Internet Web Professional" title="CIW | Certified Internet Web Professional" style="width:65px; height: 40px; border: 0;"></a></div> 
+
+			<div> <a href="http:/www.microsoft.com/en-us/learning/mta-certification.aspx" target="_blank"><img id="ciw-web" src="images/Microsoft_logo.jpg" alt="Microsoft MTA Certified" title="Microsoft MTA Certified" style="width:40px; height: 40px; border: 0;"></a></div> 
+			</div>
+			
+			 <div class="certlist"> <h2>IT Certified:</h2>
+				<ul><li>Oracle Java SE 7 Programmer 1 </li>
+					<li>CompTIA Security+ </li>
+					<li>CompTIA Network+ </li>
+					<li>CompTIA Project+ </li>
+					<li>CompTIA A+ </li> 
+					<li>CIW Web Development Professional</li>
+					<li>CIW Perl Specialist </li>
+					<li>CIW Database Design Specialist </li>					
+					<li>CIW JavaScript Specialist </li>
+					<li>CIW Web Design Specialist </li>
+					<li>CIW Web Foundations Associate </li>
+					<li>MTA Software Development Fundamentals</li>					
+					<li>MTA Windows OS Fundamentals</li>
+					<li>MTA Windows Server Administration Fundamentals</li>
+					</ul>
+				
+					<div id="copyright"> Copyright &copy; 2013 Jerome M. Griffith at Pinevergreen Studios. </div> 
+			</div>
+
+		
+		<div id="social-all">
+			<ul id="social">
+			<!--List for social media links. -->
+			<li> <a class="facebook-button" href="https://www.facebook.com/jerome.m.griffith" target="_blank" alt="Facebook icon" title="Jerome on Facebook"> </a></li> 
+			<li> <a class="linkedin-button" href="http://www.linkedin.com/pub/jerome-griffith/31/3a3/559" target="_blank" alt="LinkedIn icon" title="Jerome on LinkedIn"></a></li>
+			<li> <a class="wordpress-button" href="http://pinevergreenstudios.wordpress.com" target="_blank"  alt="WordPress icon" title="Pinevergreen on Wordpress"></a></li>
+			<li> <a class="youtube-button" href="http://www.youtube.com/watch?v=VWAv4OlD2k4&list=PLEA61A9629E696091"  target="_blank" alt="YouTube icon" title="Jerome on YouTube"> </a></li>
+			<li> <a class="email-button" href="mailto:pinevergreenstudios@gmail.com" target="_blank" alt="email icon" title="Email"> </a></li>
+			</ul>
+			
+			
+		<div id="sitelock"> 
+			<a href="#" onclick="window.open('https://www.sitelock.com/verify.php?site=pinevergreenstudios.com','SiteLock','width=600,height=600,left=160,top=170');" >
+			<img alt="website security" title="SiteLock"  src="//shield.sitelock.com/shield/pinevergreenstudios.com"/>
+			</a>
+		</div>
+			
+		</div> <!-- Close id= social-all -->
+		
+
+	</div> <!-- Close div id= footer -->
+
+		
+	</footer>
+	
+	<!-- Open popup for ui-dialog for ciw web foundations 
+<div style="position: relative; width: 96%; height: 200px; padding:1% 2%; overflow:hidden; " class="fakewindowcontain">
+</div>  -->
+
+<!-- Open popup for ui-dialog for ciw web foundations --> 
+<!-- ui-dialog -->
+<div id="dialog" title="CIW Web Foundations Associate Certification">
+	<p>The <a href="http://www.ciwcertified.com/Certifications/Web_Foundations_Series/associate.php" target="_blank">CIW Web Foundations</a> series consist of three foundation courses and corresponding 
+			certification exams that teach and validate more than mere literacy skills. 
+			They have a unique understanding of Internet Business, Data Networking and Web Site Design.<br />
+			<em>Source: CIW | Web Foundations Associates Are Skilled with Internet Technology. (2013). Retrieved from http://www.ciwcertified.com </em>
+		.</p>
+</div>	
+<!-- Close popup for ui-dialog -->
+
+
+	<!-- 
+	<div style="position: relative; width: 96%; height: 200px; padding:1% 2%; overflow:hidden;" class="fakewindowcontain">
+	</div>  -->
+
+	<!-- Open popup for ui-dialog for ciw web design cert --> 		
+
+	<!-- ui-dialog2 -->
+	<div id="dialog2" title="CIW Web Design Specialist Certification">
+	<p>The <a href="http://www.ciwcertified.com/certifications/Web_Design_Series/design.php" target="_blank">CIW Web Design Specialist</a>  
+			course teaches you how to design and publish Web sites. General topics 
+			include Web Site Development Essentials (such as the site development process, customer expectations, 
+			and ethical and legal issues in Web development), Web Design Elements (such as aesthetics, the site 
+			user's experience, navigation, usability and accessibility), Basic Web Technologies (such as basic 
+			Hypertext Markup Language [HTML], Extensible HTML [XHTML] and extended technologies, image files, 
+			GUI site development applications, site publishing and maintenance) and Advanced Web Technologies 
+			(such as multimedia and plug-in technologies, client-side and server-side technologies, and Web databases).<br />
+			<em>Source: CIW | Web Design Specialists Are Experts in Web Site Design. (2013). Retrieved from http://www.ciwcertified.com </em>
+		.</p> 
+		
+		</div>
+		
+	<!-- Close popup for ui-dialog for ciw web design cert -->			
+
+	<!-- 
+	<div style="position: relative; width: 96%; height: 200px; padding:1% 2%; overflow:hidden;" class="fakewindowcontain">
+	</div>  -->	
+	
+	<!-- Open popup for ui-dialog for ciw javascript cert -->
+
+	<!-- ui-dialog3 -->
+	<div id="dialog3" title="CIW JavaScript Specialist Certification">
+	<p>The <a href="http://www.ciwcertified.com/Certifications/Web_Development_Series/javascript.php" target="_blank">CIW JavaScript Specialist</a>  
+			course teaches developers how to use the features of the JavaScript language to design client-side, 
+			platform-independent solutions. Students will also understand and use the most popular applications of JavaScript. 
+			These specialized Web language skills can help you begin or grow a career in advanced Web development and technologies.<br />
+			<em>Source: CIW | JavaScript Specialists Develop Front-End Applications for the Web. (2013). Retrieved from http://www.ciwcertified.com </em>
+		.</p> 
+		
+		</div>
+		
+	<!-- Close popup for ui-dialog for ciw javascript cert -->			
+		
+	</div> 
+
+
+</body>
+</html>

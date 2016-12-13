@@ -1,0 +1,219 @@
+/* left navigation */
+#portalLeftNav { display: none; }
+
+/* CSS Document */
+#Legalbanner a:link {text-decoration: none; color: white;}
+#Legalbanner a:active {text-decoration: none; color: white;}
+#Legalbanner a:visited {text-decoration: none; color: white;}
+#Legalbanner a:hover {text-decoration: underline; color: white;}
+#Legalbanner { width: 100%; background:url('/wcmcontent6/wps6/wcm/myconnect/296dc18040305f42938e9701e4493faf/?MOD=AJPERES'); height: 140px; }
+#LegalbannerLinks { height: 140px; background:url('/wcmcontent6/wps6/wcm/myconnect/6c0855804002ba7b9904994fece1dc1e/?MOD=AJPERES'); background-repeat: no-repeat; }
+#LegalbannerLinks2 { text-align: right; font-size: 10px; padding-right: 20px; padding-top: 100px; color: #fff;}
+
+.Legal_image {float: left; padding-right: 10px; padding-bottom: 10px; width: 154px; text-align: left;}
+.Legal_image img { width: 144px; text-align: left; float: left;}
+.Legal_story { padding: 0px 2px; margin: 0; }#mytrplanding h1
+.Legal_story p { margin: 9px 0; } 
+.Legal_story ul { margin: 9px 0 9px 15px; } 
+.Legal_story li { margin: 0; } 
+.clear { clear: both; }
+
+/*GREEN*/
+/* .portlet_1 {width: 235px;} */
+.portlet_1 {margin: 0 auto;}
+.portlet_1_header {width: 100%; height: 30px; background-image: url('/wcmcontent6/wps6/wcm/myconnect/c14f18804004c5b999b7994fece1dc1e/?MOD=AJPERES'); background-repeat: repeat-x; background-position: left;}
+.portlet_1_header_text {color: white; font-size: 12px; padding-top: 7px; margin-left: 10px;} 
+.portlet_1_main {background-color: #dee7d4; width: 100%;} 
+.portlet_1_main_text {padding-left: 10px; padding-right: 10px; padding-top: 15px; padding-bottom: 15px;}
+.portlet_1 a:link {color: #00425f; text-decoration: none;}
+.portlet_1 a:active {color: #00425f; text-decoration: none;}
+.portlet_1 a:visited {color: #00425f; text-decoration: none;}
+.portlet_1 a:hover {color: #00425f; text-decoration: underline;}
+.portlet_1 a.tooltip:hover {background:#dee7d4; text-decoration:none;} /*BG color is a must for IE6*/
+.portlet_1 a.tooltip span {display:none; padding:2px 3px; margin-left:8px; width:130px;}
+.portlet_1 a.tooltip:hover span{display:inline; position:absolute; background-color: #dee7f7; border:1px solid #000; color:#000; font-weight: normal;}
+
+/*DARK GRAY*/
+.portlet_3 {margin: 0 auto;}
+.portlet_3 a:link {color: #00425f; text-decoration: none;}
+.portlet_3 a:active {color: #00425f; text-decoration: none;}
+.portlet_3 a:visited {color: #00425f; text-decoration: none;}
+.portlet_3 a:hover {color: #00425f; text-decoration: underline;}
+.portlet_3_header { height: 30px; background-image: url('/wcmcontent6/wps6/wcm/myconnect/f310bf804004c64b99bd994fece1dc1e/?MOD=AJPERES'); background-repeat: repeat-x; background-position: top left;  height: 32px; padding: 0 5px; }
+.portlet_3_header_text {margin: 0; float: left; width: 90%; clear: both; } 
+.portlet_3_header_text a:link, .portlet_3_header_text a:hover, .portlet_3_header_text a:visited, .portlet_3_header_text a:active { color: #fff; text-decoration: none; font-size: 12px; font-weight: none; width: 100%; padding: 8px 10px 8px 0; display: block;  }
+.portlet_3_close { display: block; float: right; width: 12px; padding: 8px 0 0 0; } 
+.portlet_3_main {background-color: #d0d1cd; width: 100%;} 
+.portlet_3_main_text {padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 5px;}
+.portlet_3_main_text p { margin: 0 0 15px 0; }
+
+/*LIGHT GRAY*/
+.portlet_4 { margin: 0 auto; }
+.portlet_4 a:link {color: #00425f; text-decoration: none;}
+.portlet_4 a:active {color: #00425f; text-decoration: none;}
+.portlet_4 a:visited {color: #00425f; text-decoration: none;}
+.portlet_4 a:hover {color: #00425f; text-decoration: underline;}
+.portlet_4_header {height: 30px; background-image: url('/wcmcontent6/wps6/wcm/myconnect/9b4579004004c68a99c3994fece1dc1e/?MOD=AJPERES'); background-repeat: repeat-x; background-position: left; height: 32px; padding: 0 5px;}
+.portlet_4_header_text {margin: 0; float: left; width: 90%; clear: both;} 
+.portlet_4_header_text a:link, .portlet_4_header_text a:hover, .portlet_4_header_text a:active, .portlet_4_header_text a:visited { color: #fff; text-decoration: none; font-size: 12px; font-weight: none; width: 100%; padding: 8px 10px 8px 0; display: block;}
+.portlet_4_close { display: block; float: right; width: 12px; padding: 8px 0 0 0; } 
+.portlet_4_main {background-color: #f2f4f4; width: 100%;} 
+.portlet_4_main_text {padding-left: 10px; padding-right: 10px; padding-top: 15px; padding-bottom: 15px;}
+.portlet_4 input { width: 115px; }
+.portlet_4 #searchImg input { width: 16px; }
+
+/* .portlet_5 {width: 240px;} */
+.portlet_5 { margin: 0 auto; }
+.portlet_5_header {width: 100%; height: 30px; background-image: url('/wcmcontent6/wps6/wcm/myconnect/f310bf804004c64b99bd994fece1dc1e/?MOD=AJPERES'); background-repeat: repeat-x; background-position: left;}
+.portlet_5_header_text {color: white; font-size: 12px; padding-top: 7px; margin-left: 10px;} 
+.portlet_5_main {background-color: #d0d1cd; width: 100%;} 
+.portlet_5_main_text {padding-left: 10px; padding-right: 10px; padding-top: 15px; padding-bottom: 15px;}
+.portlet_5 a:link {color: #00425f; text-decoration: none;}
+.portlet_5 a:active {color: #00425f; text-decoration: none;}
+.portlet_5 a:visited {color: #00425f; text-decoration: none;}
+.portlet_5 a:hover {color: #00425f; text-decoration: underline;}
+
+/* .portlet_6 {width: 240px;} */
+.portlet_6 { margin: 0 auto; }
+.portlet_6_header {width: 100%; height: 30px; background-image: url('/wcmcontent6/wps6/wcm/myconnect/9b4579004004c68a99c3994fece1dc1e/?MOD=AJPERES'); background-repeat: repeat-x; background-position: left;}
+.portlet_6_header_text {color: white; font-size: 12px; padding-top: 7px; margin-left: 10px;} 
+.portlet_6_main {background-color: #f2f4f4; width: 100%;} 
+.portlet_6_main_text {padding-left: 10px; padding-right: 10px; padding-top: 15px; padding-bottom: 15px;}
+.portlet_6 a:link {color: #00425f; text-decoration: none;}
+.portlet_6 a:active {color: #00425f; text-decoration: none;}
+.portlet_6 a:visited {color: #00425f; text-decoration: none;}
+.portlet_6 a:hover {color: #00425f; text-decoration: underline;}
+
+/* .rps_locator {width: 235px; background-color: #f2f4f4;} */
+.rps_locator {background-color: #f2f4f4; margin: 0 auto; width: 100%;}
+/*.rps_locator td { padding: 5px; } */
+.rps_locator .rps_locator_header {width: 100%; height: 30px; background-image: url('/wcmcontent6/wps6/wcm/myconnect/9b4579004004c68a99c3994fece1dc1e/?MOD=AJPERES'); background-repeat: repeat-x; background-position: left; text-align: left; font-weight: normal; padding: 0;}
+.rps_locator .rps_locator_header span {color: white; font-size: 12px; padding-top: 7px; margin-left: 10px;} 
+/*.rps_locator table { padding: 0; margin: -5px 0 0 0; } */
+.rps_locator table { padding: 0; margin: -5px auto 0 auto; }
+.rps_locator table table { padding: 0; margin: 0; }
+.rps_locator table table table { padding: 0; margin: 0; }
+.rps_locator td .wpsPortletBody td { padding: 0; margin: 0; }
+.rps_locator a:link {color: #00425f; text-decoration: none;}
+.rps_locator a:active {color: #00425f; text-decoration: none;}
+.rps_locator a:visited {color: #00425f; text-decoration: none;}
+.rps_locator a:hover {color: #00425f; text-decoration: underline;}
+
+/* .portlet_7 {width: 240px;} */
+.portlet_7 { margin: 0 auto; }
+.portlet_7_header {width: 100%; height: 30px; background-image: url('/wcmcontent6/wps6/wcm/myconnect/9b4579004004c68a99c3994fece1dc1e/?MOD=AJPERES'); background-repeat: repeat-x; background-position: left;}
+.portlet_7_header_text {color: white; font-size: 12px; padding-top: 7px; margin-left: 10px;} 
+.portlet_7_main {background-color: #f2f4f4; width: 100%;} 
+.portlet_7_main_text {padding-left: 10px; padding-right: 10px; padding-top: 15px; padding-bottom: 15px;}
+.portlet_7 a:link {color: #00425f; text-decoration: none;}
+.portlet_7 a:active {color: #00425f; text-decoration: none;}
+.portlet_7 a:visited {color: #00425f; text-decoration: none;}
+.portlet_7 a:hover {color: #00425f; text-decoration: underline;}
+.portlet_ourAssoc_links a:link, portlet_ourAssoc_links a:active, portlet_ourAssoc_links a:visited, portlet_ourAssoc_links a:hover { font-size: 9px; background-color: #a2b2ae; border: 1px solid #333; color: white; font-weight: bold; padding: 2px; } 
+a:link.portlet_ourAssoc_links_current, a:visited.portlet_ourAssoc_links_current, a:active.portlet_ourAssoc_links_current, a:hover.portlet_ourAssoc_links_current { background-color: #666; }
+
+/* .portlet_8 {width: 240px;} */
+.portlet_8 { margin: 0 auto; }
+.portlet_8 a:link {color: #00425f; text-decoration: none;}
+.portlet_8 a:active {color: #00425f; text-decoration: none;}
+.portlet_8 a:visited {color: #00425f; text-decoration: none;}
+.portlet_8 a:hover {color: #00425f; text-decoration: underline;}
+.portlet_8_header {width: 100%; height: 30px; background-image: url('/wcmcontent6/wps6/wcm/myconnect/f310bf804004c64b99bd994fece1dc1e/?MOD=AJPERES'); background-repeat: repeat-x; background-position: left;}
+.portlet_8_header_text {color: white; font-size: 12px; padding-top: 7px; margin-left: 10px;} 
+.portlet_8_header_text a:link, .portlet_8_header_text a:visited, .portlet_8_header_text a:hover, .portlet_8_header_text a:active {color: white; text-decoration:none; } 
+.portlet_8_main {background-color: #d0d1cd; width: 100%;} 
+.portlet_8_main_text {padding-left: 10px; padding-right: 10px; padding-top: 15px; padding-bottom: 15px;}
+
+/*GREEN*/
+/* .portlet_9 {width: 235px;} */
+.portlet_9 { margin: 0 auto; }
+.portlet_9_header {width: 100%; height: 30px; background-image: url('/wcmcontent6/wps6/wcm/myconnect/c14f18804004c5b999b7994fece1dc1e/?MOD=AJPERES'); background-repeat: repeat-x; background-position: left;}
+.portlet_9_header_text {color: white; font-size: 12px; padding-top: 7px; margin-left: 10px;} 
+.portlet_9_main {background-color: #dee7d4; width: 100%;} 
+.portlet_9_main_text {padding-left: 10px; padding-right: 10px; padding-top: 15px; padding-bottom: 15px;}
+.portlet_9 a:link {color: #00425f; text-decoration: none;}
+.portlet_9 a:active {color: #00425f; text-decoration: none;}
+.portlet_9 a:visited {color: #00425f; text-decoration: none;}
+.portlet_9 a:hover {color: #00425f; text-decoration: underline;}
+
+.center_message_text a:link {color: #00425f; text-decoration: none;}
+.center_message_text a:active {color: #00425f; text-decoration: none;}
+.center_message_text a:visited {color: #00425f; text-decoration: none;}
+.center_message_text a:hover {color: #00425f; text-decoration: underline;}
+
+.center_list a:link {color: #00425f; text-decoration: none;}
+.center_list a:active {color: #00425f; text-decoration: none;}
+.center_list a:visited {color: #00425f; text-decoration: none;}
+.center_list a:hover {color: #00425f; text-decoration: underline;}
+.center_list ul {margin-left: 15px; color: #00425f;}
+
+#mytrp_accordion { margin-top: -3px; padding-right: 10px;}
+#mytrp_business_operations_accordion { margin-top: -3px; padding-right: 20px;}
+#mytrp_account_management_accordion { margin-top: -3px; padding-right: 20px;}
+#mytrp_london_accordion { margin-top: -3px; padding-right: 20px;}
+#mytrp_marketing_services_accordion { margin-top: -3px; padding-right: 20px;}
+#mytrp_resources_accordion { margin-top: -3px; padding-right: 20px;}
+
+
+#mytrp_accordion p.mytrp_accordion_section_header { margin: 0; float: left; width: 90%; clear: both; font-style: normal; }
+#mytrp_business_operations_accordion p.mytrp_accordion_section_header { margin: 0; float: left; width: 90%; clear: both; font-style: normal; }
+#mytrp_account_management_accordion p.mytrp_accordion_section_header { margin: 0; float: left; width: 90%; clear: both; font-style: normal;}
+#mytrp_london_accordion p.mytrp_accordion_section_header { margin: 0; float: left; width: 90%; clear: both; font-style: normal;}
+#mytrp_marketing_services_accordion p.mytrp_accordion_section_header { margin: 0; float: left; width: 90%; clear: both; font-style: normal;}
+#mytrp_resources_accordion p.mytrp_accordion_section_header { margin: 0; float: left; width: 90%; clear: both; font-style: normal;}
+
+
+#mytrp_accordion p.mytrp_accordion_section_header a { color: #00425F; text-decoration: none; font-weight: none; font-size: 10px; width: 100%; padding: 8px 10px 8px 0; display: block;  outline: 0 none;  }
+#mytrp_business_operations_accordion p.mytrp_accordion_section_header a { color: #00425F; text-decoration: none; font-weight: none; font-size: 10px; width: 100%; padding: 8px 10px 8px 0; display: block;  outline: 0 none; }
+#mytrp_account_management_accordion p.mytrp_accordion_section_header a { color: #00425F; text-decoration: none; font-weight: none; font-size: 10px; width: 100%; padding: 8px 10px 8px 0; display: block;  outline: 0 none; }
+#mytrp_london_accordion p.mytrp_accordion_section_header a { color: #00425F; text-decoration: none; font-weight: none; font-size: 10px; width: 100%; padding: 8px 10px 8px 0; display: block;  outline: 0 none; }
+#mytrp_marketing_services_accordion p.mytrp_accordion_section_header a { color: #00425F; text-decoration: none; font-weight: none; font-size: 10px; width: 100%; padding: 8px 10px 8px 0; display: block;  outline: 0 none; }
+#mytrp_resources_accordion p.mytrp_accordion_section_header a { color: #00425F; text-decoration: none; font-weight: none; font-size: 10px; width: 100%; padding: 8px 10px 8px 0; display: block;  outline: 0 none; }
+
+
+.rps_header_container { background-color: #cacaaf; background-position: top left; background-repeat: repeat-x; height: 32px; padding: 0 13px;}
+#mytrp_account_management_accordion .rps_header_container{ background-color: #B6B7B2; background-position: top left; background-repeat: repeat-x; height: 32px; padding: 0 13px;}
+#mytrp_business_operations_accordion .rps_header_container{ background-color: #cacaaf; background-position: top left; background-repeat: repeat-x; height: 32px; padding: 0 13px;}
+#mytrp_london_accordion .rps_header_container{ background-color: #ACC8CC; background-position: top left; background-repeat: repeat-x; height: 32px; padding: 0 13px;}
+#mytrp_marketing_services_accordion .rps_header_container{ background-color: #ACC8CC; background-position: top left; background-repeat: repeat-x; height: 32px; padding: 0 13px;}
+#mytrp_resources_accordion  .rps_header_container{ background-color: #B2C6CE; background-position: top left; background-repeat: repeat-x; height: 32px; padding: 0 13px;}
+
+
+
+.mytrp_accordion_section a { text-decoration: none;  } 
+
+.mytrp_accordion_section { margin: 0px auto 0 auto; background-color: #FFFFFF; clear:both;  text-align: left; font-size: 10px; font-style: italic;} 
+#mytrp_account_management_accordion .mytrp_accordion_section{ margin: 0px auto 0 auto; background-color: #B6B7B2; clear:both;  text-align: left; font-size: 10px; font-style: italic;} 
+#mytrp_business_operations_accordion .mytrp_accordion_section { margin: 0px auto 0 auto; background-color: #CACAAF; clear:both; text-align: left; font-size: 10px; font-style: italic;} 
+#mytrp_london_accordion .mytrp_accordion_section { margin: 0px auto 0 auto; background-color: #ACC8CC; clear:both; text-align: left; font-size: 10px; font-style: italic;} 
+#mytrp_marketing_services_accordion .mytrp_accordion_section { margin: 0px auto 0 auto; background-color: #ccd9df; clear:both; text-align: left; font-size: 10px; font-style: italic;} 
+#mytrp_resources_accordion .mytrp_accordion_section { margin: 0px auto 0 auto; background-color: #B2C6CE; clear:both; text-align: left; font-size: 10px; font-style: italic;} 
+
+ 
+.mytrp_accordion_titlesection { margin: 0px auto 0 auto; background-color: #FFFFFF; clear:both; color:#00425F; height:20px;font-size: 11px;  text-decoration: none;  } 
+#mytrp_business_operations_accordion .mytrp_accordion_titlesection { margin: 0px auto 0 auto; background-color: #B3B38C; clear:both; border: 2px solid #B3B38C; color:#FFFFFF; font-weight:bold; height:20px;font-size: 11px;  padding-left: 13px; text-decoration: none;  } 
+#mytrp_account_management_accordion .mytrp_accordion_titlesection { margin: 0px auto 0 auto; background-color: #6D5F64; clear:both; border: 2px solid #6D5F64; color:#FFFFFF; font-weight:bold; height:20px;font-size: 11px;  padding-left: 13px; text-decoration: none;  } 
+#mytrp_london_accordion .mytrp_accordion_titlesection { margin: 0px auto 0 auto; background-color: #589199; clear:both; border: 2px solid #589199; color:#FFFFFF; font-weight:bold; height:20px;font-size: 11px;  padding-left: 13px; text-decoration: none;  } 
+#mytrp_marketing_services_accordion .mytrp_accordion_titlesection { margin: 0px auto 0 auto; background-color: #4d7b90; clear:both; border: 2px solid #4D7B90; color:#FFFFFF; font-weight:bold; height:20px;font-size: 11px;  padding-left: 13px; text-decoration: none;  } 
+#mytrp_resources_accordion .mytrp_accordion_titlesection { margin: 0px auto 0 auto; background-color: #00425F; clear:both; border: 2px solid #00425F; color:#FFFFFF; font-weight:bold; height:20px;font-size: 11px;  padding-left: 13px; text-decoration: none;  } 
+
+
+/* .mytrp_accordion_section { margin: 3px 0 0 0; background-color: #d8e6ef; clear:both; border: 1px solid #fff; text-align: left;} */
+#mytrp_accordion_BusinessOperations div{ padding: 0px 0px 0px 0px; }
+
+
+.rps_close {display: block; float: right; width: 12px; padding: 8px 0 0 0;}
+.rps_open {display: block; float: right; width: 12px; padding: 8px 0 0 0;}
+
+.rps_open img{ border: 0 none;}
+.rps_close img{ border: 0 none;}
+
+.rps_close a:visited, .rps_close a:active, .rps_close a:link, .rps_close a:hover { color: #b8c7ce; text-decoration: none; }
+
+
+#mytrp_accordion_AccountManagement, #mytrp_accordion_businessoperations, #mytrp_accordion_processandservice, #mytrp_accordion_digitalprintservices,  #mytrp_accordion_fulfillment, #mytrp_accordion_printandmail { margin-bottom: 0px; clear: both; line-height: 1.2em; font-size: 10px; padding-left: 0px; font-style: italic;}
+
+
+
+
+

@@ -1,0 +1,460 @@
+<!doctype html>
+
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8" /> 
+	<meta name="author" content="Jerome M. Griffith, Jerome Matiyas" />
+	<meta name="keywords" content="Graphic Design, Web Design, Mekonnen, Epic, Jerome Matiyas, Ethiopia, Eritrea, Aksum " /> 
+	<meta name="description" content=" Working under the pen name Jerome Matiyas, in my spare time I have been illustrating and writing an epic adventure story entitled The Epic Adventures of Mekonnen (Mekonnen Epic). 
+			The story is set in an alternate historical earth in the 6th century AD, as a young warrior name Mekonnen Sofaniyas from the great Empire of Aksum 
+			in the highlands of Ethiopia and Eritrea finds himself in a grand cosmic battle between good and evil, Light and Darkness." />
+	<title> PINEVERGREEN Studios | Mekonnen Epic </title>
+
+ 	
+	<link rel="stylesheet" type="text/css" href="pine.css" /> 
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> 
+
+<!-- <script src="js/jquery-1.8.3.js"></script> this will turn off fancybox if comments removed. DO NOT Remove comment tags -->
+	<script src="js/jquery-ui-1.9.2.custom.js"></script> 
+
+  <!-- Add jQuery library -->
+	<script type="text/javascript" src="js/fancyapps-fancyBox/lib/jquery-1.10.1.min.js"></script> 
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="js/fancyapps-fancyBox/source/jquery.fancybox.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/fancyapps-fancyBox/source/jquery.fancybox.css" media="screen" /> 
+
+	
+<script type="text/Javascript">
+
+<!-- String object script for new window showing links to other Mekonnen sites developed by Jerome Griffith. (ls. fig 6-1)--> 
+<!--
+
+function linksMeko() {
+      var content="", linkWindow;
+
+	  content += "<html><head><base target='_blank'></head><body>";
+	  content += "<title> Mekonnen Epic Web Sites</title>";
+	  
+	  content += "";
+	  
+//Add big() and fontcolor() methods
+        content += "Mekonnen Epic Sites".big().fontcolor("orange").bold().toUpperCase();
+	  content += "<p>\nWebsites associated with ";
+	 
+ //Add italics() method
+        content += "Mekonnen Epic".italics(); 
+        content += " created by Jerome M. Griffith</p>\n";
+        content += "<ul><li>";
+	  
+//Add link() method
+ //Use http://www.MekonnenEpic.com
+        content += "Mekonnen Epic".link("http://www.MekonnenEpic.com");
+        content += "\n</li>";
+	  
+//Add link() method 
+         content += "\n<li>";
+//Use http://m.MekonnenEpic.com
+        content += "Mekonnen Epic Mobile".link("http://m.mekonnenepic.com");
+        content += "\n</li>";
+	  
+//Add link() method
+         content += "\n<li>";
+	  //Use http://www.cafepress.com/mekonnenepic
+        content += "Mekonnen Epic Online Store".link("http://www.cafepress.com/mekonnenepic");
+        content += "\n</li></ul></body></html>";
+
+        linkWindow=open("","Links","width=350,height=200,resizable=1");
+	
+	  with(linkWindow.document) {
+        open();
+	    write(content);
+	    close();
+        }
+    }
+	
+// -->
+
+</script>	
+	
+<!-- Begin Fancybox script, fancyapps.com/fancybox -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+			 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			 */
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+			/*
+			 *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+			*/
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+
+			/*
+			 *  Open manually
+			 */
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+
+
+		});
+	</script>
+	
+	<!-- Fancybox CSS positioning -->	
+	<style type="text/css">
+		.fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #222;
+		}
+
+	/*	body {
+			max-width: 700px;
+			margin: 0 auto;  */
+		}
+	</style> 
+<!-- End of Fancybox Script -->		
+	
+	
+  <script>
+  // accordion script from jquery.com 
+  $(function() {
+    $( "#accordion" ).accordion({
+      collapsible: true
+    });
+  });
+  
+  </script> 
+			
+<noscript><a href="http://www.mekonnenepic.com" target="_blank"><img id="mekoEpic" src="images/mekonnen-epic_title.png"  alt="Mekonnen Epic Title Image &copy; Jerome Matiyas, 2012" title="Mekonnen Epic Title, &copy; Jerome Matiyas, 2012"/></a></noscript> 
+	
+</head>
+
+<body>
+
+<div id="container">
+
+	<header id="banner">
+		
+<figure id="pinestudioLogo"> 
+		<a href="index.html"><img class="pinestudioLogo" src="images/pine-logo.png" alt="Pinevergreen Studios Logo" title="Pinevergreen Studio Logo"/></a> 
+</figure>  
+
+		<div id="titlePine">
+			<h1> PINEVERGREEN STUDIOS</h1>
+			<h2> Jerome Griffith's Mekonnen Epic </h2>
+			<p><em>Artwork and writing under the pen name Jerome Matiyas</em> </p>
+		</div>
+			
+</header> 
+
+<nav id="pine-menu">
+   
+	<ul>
+		<li> <a href="index.html">Home</a></li>
+		<li> <a href="objectives.html">Objectives</a></li>
+		<li> <a href="experience.html">Experience</a> </li>
+		<li> <a href="portfolio.html">Portfolio</a> </li>
+		<li> <a href="education.html">Education</a> </li>
+		<li> <a href="mekonnen.html" class="current">Mekonnen</a> </li>
+		<li> <a href="community.html">Community</a> </li>
+ 	</ul>
+	</nav>
+	
+	<!-- <section id="mekoSwag"> -->	
+		<figure>
+			<img id="mekoSwag" src="images/mekonnen-swag.png" alt="Image of Mekonnen, warrior from Aksum, copyright Jerome Matiyas, 2012." title="Mekonnen, the warrior from Aksum. Main character and hero of the epic adventure. &copy; Jerome Matiyas, 2012"/> 
+		<figure> 
+	<!-- </section> -->
+	
+	
+<section class="mekon">		
+
+	<article class="mekon">
+	
+	<!-- <a href="http://www.mekonnenepic.com" target="_blank"><img id="mekoEpic" src="images/mekonnen-epic_title.png"  alt="Mekonnen Epic Title Image &copy; Jerome Matiyas, 2012" title="Mekonnen Epic Title, &copy; Jerome Matiyas, 2012"/></a>
+		-->
+				
+		<a href="javascript:void(linksMeko());"onmouseover="status='Mekonnen Epic Links';return true;"onmouseout="status='';return true;">
+			<img id="mekoEpic" src="images/mekonnen-epic_title.png"  alt="Mekonnen Epic Title Image &copy; Jerome Matiyas, 2012" title="Mekonnen Epic Title, &copy; Jerome Matiyas, 2012"/></a>
+		
+		<hgroup>
+			<h1 class="mekon">Mekonnen Epic Treasures</h1>
+			<h2> by Jerome Matiyas </h2>
+			<h3> Illustrated Novel Coming Soon! </h3>
+		</hgroup>
+		
+		<p>
+			Working under the pen name Jerome Matiyas, in my spare time I have been illustrating and writing an 
+			epic adventure story entitled <span style="font-weight:bold;">The Epic Adventures of Mekonnen (Mekonnen Epic)</span>. 
+			It's written in the genre of historical-fantasy adventure, similar to the <em>Lord of the Ring Trilogy</em> by J. R. R. Tolkien and <em>The Chronicles of Narnia</em> by C. S. Lewis, 
+			yet totally original. I've been influenced and inspired by ancient writings, belief systems and mythologies and exotic cultures from around the world. My art style has evolved over the years 
+			from realistic renderings with pencils, fine point markers and color pencils to techniques similar to American and Japanese comic books and animation, drawing 
+			clearly defined outlines by hand than scanning them to add meticulously applied colors and effects with computer software like PhotoShop, GIMP and InkScape.
+			</p>
+			<p>
+			The story is set in an alternate historical earth in the 6th century AD, 
+			as a young warrior name Mekonnen Sofaniyas from the great Empire of Aksum 
+			in the highlands of Ethiopia and Eritrea finds himself in a grand cosmic 
+			battle between good and evil, Light and Darkness. <br/><br/>
+			Go to <a href="http://www.mekonnenepic.com" target="_blank">MekonnenEpic.com</a> for more details!
+			
+		</p>
+		
+		<blockquote class="mekoQuote"><em>When Darkness descends upon a kingdom, A Warrior must rise up to restore the Light!</em> <br/> 
+				Tag line for book one, The Warrior From Aksum, by Jerome Matiyas, 2013.</blockquote> 
+				
+		<p>
+		<h2 class="mekon">Synopsis:</h2>
+		As the Armies of Light clash with the Mysteries of Darkness, The Kingdoms of Earth are 
+		caught in the midst and the fate of the universe hangs in the balance. <br/>
+		Mekonnen, a warrior from the great Ethiopian Kingdom of Aksum in the 6th century AD, 
+		is caught in the midst of this ancient conflict between good and evil as his life is changed forever when his kingdom is 
+		attacked by malevolent agents from the dominions of the nefarious Prince Mastemo. <br/> <br/>
+		Entrusted with the mysterious yet powerful Armor of Egziabeher (Armor of God) to fight against these forces, 
+		Mekonnen embarks on a grand adventure, forming alliances with other Warriors of Light from around the world 
+		and beings from the Realms of Shamayim. Together they must combat the strategies of the enemy as the battle takes them on 
+		journeys through the outer Realms of Semayat, Meder and Siol - Heaven, Earth and Hell. <br/><br/>
+		It's an epic battle that will unveil the true rulers of Light and Darkness, determine the fate of all creation and the moral state of Mekonnen's own soul.<br/> 
+		~Matiyas
+		
+		</p> 
+		
+	
+	
+<br/>	
+	<figure>
+		<a class="fancybox" href="images/character_panels01.jpg" data-fancybox-group="gallery" title="Some of the supporting characters in the Mekonnen Epic adventure. &copy; Jerome Matiyas, 2012">
+		  <img id="mekoPanels" src="images/character_panels01.jpg" alt="Panels of supporting characters in the Mekonnen Epic, copyright Jerome Matiyas, 2012." title="Some of the supporting characters in the Mekonnen Epic adventure. &copy; Jerome Matiyas, 2012" style="width:430px; 150px;" /></a>
+
+	<!-- <img id="mekoPanels" src="images/character_panels01.jpg" alt="Panels of supporting characters in the Mekonnen Epic, copyright Jerome Matiyas, 2012." title="Some of the supporting characters in the Mekonnen Epic adventure. &copy; Jerome Matiyas, 2012"/> -->
+			<figcaption>Some of the supporting characters in the Mekonnen Epic adventure. &copy; Jerome Matiyas, 2012. </figcaption>
+		</figure> 
+		
+	</article>
+	
+</section>
+	
+	<aside class="mekon">
+	
+			<hgroup>
+			<h1> Copyright Disclosure</h1>
+			</hgroup>
+		<p>
+			<em>The Epic Adventures of Mekonnen (Mekonnen Epic) and all artwork, characters and stories are copyrighted by Jerome M. Griffith (alias Jerome Matiyas) since 1992.
+			All works are officially copyrighted with the Library of Congress, Washington DC, USA, since 2009 and 2012. No images, plot lines or stories from this website or any other website
+			pertaining to the Mekonnen Epic shall be copied or distributed without permission from the author/artist. </em>
+		</p> 
+		
+	<section >
+		
+			<h1>Links to Mekonnen Websites</h1>
+		<p>
+		<ul> 
+			<li><a href="http://www.mekonnenepic.com" target="_blank">Flash Website</a> </li>
+			<li><a href="http://m.mekonnenepic.com" target="_blank">Mobile Website</a> </li>
+			<li><a href="http://cafepress.com/mekonnenepic" target="_blank">Online Store</a> </li>
+			<li><a href="http://pinevergreenstudio.blogspot.com/" target="_blank">Blog</a> </li>
+			<li><a href="http://www.youtube.com/playlist?list=PLEA61A9629E696091" target="_blank">YouTube Videos</a> </li>
+		</ul>
+		</p>
+		<hr>
+	</section>
+		
+	</aside>
+	
+	<div class="clear"> </div> <!-- Clears the container box to hang below the floating elements. -->
+	
+	</div> <!-- close container -->	
+		
+<footer>
+	
+	<div id="footer">
+		
+			<div> <a href="http://www.ciwcertified.com/certifications/Web_Design_Series/design.php" target="_blank"><img id="ciw-web" src="images/ciw-webdesign_cert.jpg" alt="CIW Web Design Specialist" title="CIW  Web Design Specialist Certified, September 2013"></a></div> 
+			<div> <a href="http://www.ciwcertified.com/Certifications/Web_Foundations_Series/associate.php" target="_blank"><img id="ciw-web" src="images/ciw-webfnd_cert.jpg" alt="CIW Web Foundations Logo" title="CIW Web Foundations Associate Certified, July 2013"></a></div> 
+			
+			<div id="copyright"> Copyright &copy; 2013 Jerome M. Griffith at Pinevergreen Studios. </div>
+		
+		
+		<div id="social-all">
+			<ul id="social">
+			<!--List for social media links. -->
+			<li> <a class="facebook-button" href="https://www.facebook.com/jerome.m.griffith" target="_blank" alt="Facebook icon" title="Jerome on Facebook"> </a></li> 
+			<li> <a class="linkedin-button" href="http://www.linkedin.com/pub/jerome-griffith/31/3a3/559" target="_blank" alt="LinkedIn icon" title="Jerome on LinkedIn"></a></li>
+			<li> <a class="wordpress-button" href="http://pinevergreenstudios.wordpress.com" target="_blank"  alt="WordPress icon" title="Pinevergreen on Wordpress"></a></li>
+			<li> <a class="youtube-button" href="http://www.youtube.com/watch?v=VWAv4OlD2k4&list=PLEA61A9629E696091"  target="_blank" alt="YouTube icon" title="Jerome on YouTube"> </a></li>
+			<li> <a class="email-button" href="mailto:pinevergreenstudios@gmail.com" target="_blank" alt="email icon" title="Email"> </a></li>
+			</ul>
+			
+			
+		<div id="sitelock"> 
+			<a href="#" onclick="window.open('https://www.sitelock.com/verify.php?site=pinevergreenstudios.com','SiteLock','width=600,height=600,left=160,top=170');" >
+			<img alt="website security" title="SiteLock"  src="//shield.sitelock.com/shield/pinevergreenstudios.com"/>
+			</a>
+		</div>
+						
+		</div> 
+		
+	</div> 
+
+</footer>
+
+	
+</body>
+</html>

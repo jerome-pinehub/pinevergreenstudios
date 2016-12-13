@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<!-- Project for Web Development Foundations EUP1, WGU, for IT- Software BS degree, by Jerome M. Griffith -->
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8" /> 
+	<meta name="author" content="Jerome M. Griffith" />
+	<meta name="keywords" content="HTML, CSS, JavaScript, Java, SQL, PL-SQL, JSP, database, dba, Graphic Design, Web Design, Web Development, Information Systems, Designer, Artist, Jerome Griffith, Jerome Matiyas, web development, web technologies, computer science, IT, Information Technology, computer information systems, software, developer" /> 
+	<meta name="description" content="This web page features my portfolio of web design and development skills. Programs and technologies used are, HTML, CSS, JavaScript, PHP, Java, SQL, PL-SQL, Dreamweaver, PhotoShop, GIMP, Illustrator, Inkscape, InDesign, Drawing, Pen and Ink, and Color pencils." />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+
+	<title> PINEVERGREEN Studios | Portfolio </title>
+	
+
+	<link rel="stylesheet" type="text/css" href="pine.css" /> 
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> 
+
+<!-- <script src="js/jquery-1.8.3.js"></script> this will turn off fancybox if comments removed. DO NOT Remove comment tags -->
+	<script src="js/jquery-ui-1.9.2.custom.js"></script> 
+
+  <!-- Add jQuery library -->
+	<script type="text/javascript" src="js/fancyapps-fancyBox/lib/jquery-1.10.1.min.js"></script> 
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="js/fancyapps-fancyBox/source/jquery.fancybox.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/fancyapps-fancyBox/source/jquery.fancybox.css" media="screen" /> 
+	
+	<!-- Optionally add helpers - button, thumbnail and/or media -->
+	<link rel="stylesheet" href="js/fancyapps-fancyBox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="js/fancyapps-fancyBox/source/helpers/jquery.fancybox-buttons.js"></script>
+	<script type="text/javascript" src="js/fancyapps-fancyBox/source/helpers/jquery.fancybox-media.js"></script>		
+
+	<link rel="stylesheet" type="text/css" href="js/fancyapps-fancyBox/source/helpers/jquery.fancybox-thumbs.css" media="screen"/> 
+	<script type="text/javascript" src="js/fancyapps-fancyBox/source/helpers/jquery.fancybox-thumbs.js"></script>
+
+<!-- Begin Fancybox script, fancyapps.com/fancybox -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+			 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			 */
+
+			$('.fancybox-thumbs').fancybox({
+				
+				openEffect : 'elastic',
+				closeEffect : 'elastic',
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : true,
+				arrows    : true,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 75,
+						height : 75
+					}
+				}
+			});
+			/*
+			 *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+			*/
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+
+			/*
+			 *  Open manually
+			 */
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+
+
+		});
+	</script>
+	
+	<!-- Fancybox CSS positioning -->	
+	<style type="text/css">
+		.fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #222;
+		}
+
+	/*	body {
+			max-width: 700px;
+			margin: 0 auto;  */
+		}
+	</style> 
+<!-- End of Fancybox Script -->		
+	
+	
+  <script>
+  // accordion script from jquery 
+  $(function() {
+    $( "#accordion" ).accordion({
+      collapsible: true
+    });
+  });
+  
+  </script> 
+	
+</head>
+
+<body>
+
+
+
+	<header id="banner">
+		<div id="banner-container">
+<figure id="pinestudioLogo"> 
+		<a href="index.html"><img class="pinestudioLogo" src="images/pine-logo.png" alt="Pinevergreen Studios Logo" title="Pinevergreen Studio Logo"/></a> 
+</figure>  
+
+		<div id="titlePine">
+			<h1> PINEVERGREEN STUDIOS</h1>
+			<h2> Jerome Griffith's Portfolio </h2>
+			<p> <em>Web Development and Graphic Design</em> </p>
+		</div>
+			</div>
+	</header> 
+<div id="container">	
+	
+	<nav id="pine-menu">
+    
+	<ul>
+		<li> <a href="index.html">Home</a></li>
+		<li> <a href="objectives.html">Objectives</a></li>
+		<li> <a href="experience.html">Experience</a> </li>
+		<li> <a href="portfolio.html" class="current">Portfolio</a> </li>
+		<li> <a href="education.html">Education</a> </li>
+		<li> <a href="mekonnen.html">Mekonnen</a> </li>
+		<li> <a href="community.html">Community</a> </li>
+ 	</ul>
+		<div class="clear"> </div>
+
+	</nav>
+	
+	<section id="folioRack">		
+
+		<article class="folioRack">
+		
+	<nav id="pine-menu2">
+			
+		<div style="float:left; left:10px; margin-left:10px; position:absolute; display:block;"><a href="pf_interlove.html">< Previous </a></div>
+		<div style="float:right; right:10px; margin-right:10px; position:absolute; display:block;"><a href="pf_java-ecomm.html">Next > </a></div>  
+		</nav>
+		<div style="float:none; margin:auto; margin-top: 3rem;">		
+			<hgroup style="float:none; margin:auto; display:block;">
+				<h1> Family Vision Entertainment</h1>
+				<h3>(XHTML, CSS, PhotoShop, Firework, Illustrator) </h3>
+			</hgroup> </div>
+	
+			
+	<p class="clear"> </p> 
+	
+<!-- Family Vision content -->
+
+<div id="outer">
+    	
+	<section>
+	<article style="margin-top: 2px;">
+
+		
+<figure  style="margin-top: 0px;" >
+		<a class="fancybox-thumbs" href="folio/familyvision01.jpg" data-fancybox-group="gallery" title="Family Vision Home Page">
+		<a class="fancybox-thumbs" href="folio/familyvision02.jpg" data-fancybox-group="gallery" title="Family Vision - Membership Donation Page.">
+		<a class="fancybox-thumbs" href="folio/familyvision03.jpg" data-fancybox-group="gallery" title="Comments and Feedback Form Page.">
+		  <img src="folio/familyvision01.jpg"   alt="Divenomous Screen Shot" title="Family Vision Entertainment"/></a>
+
+			<figcaption>Family Vision Entertainment </figcaption>
+		</figure> 
+	
+	<em> 2009 to 2012 | Baltimore, MD USA</em> 
+	<p>	
+		<ul>
+	
+		<li>Produced original web pages using Dreamweaver, XHTML, CSS, Basic JavaScript.  </li>
+		<li>Used Adobe PhotoShop, Illustrator, Fireworks to create web graphics, buttons and banners. </li>
+		<li>URL <a href="familyvision_web/home.html" target="_blank">Click Here</a>.<br/><br/>
+		<em>Note: This website is no long hosted on the web by the client. The URL above is in a subfolder in my personal website. </em></li>
+		</ul>
+		
+		
+	</p> 
+	</article> 
+	</section>
+	
+  
+    <p class="clear"> </p> 
+    
+</div> <!-- close outer div id -->
+	
+	</article>
+	
+	</section>
+
+	<!-- Sidebar details -->
+	<aside id="folioPage">
+	
+		<hgroup>
+			<h3>Web Technology Skills:</h3>
+			</hgroup>
+			HTML5/XHTML<br />
+			CSS3/CSS<br/>
+			CMS<br/>
+			JavaScript<br/>
+			Branding/Logos<br/>
+			Web Graphics <br/>					
+			Wiki Macros<br/>
+			XML  <br/>
+			
+	</aside>
+	
+		<div class="clear"> </div>
+	
+	</div> <!-- close container -->	
+	
+	
+	<footer>
+	
+	<div id="footer">
+		<div class="certlogos">
+			<div><a href="https://www.youracclaim.com/badges/00213fec-16de-4ac3-be64-5284e6f054fe/public_url" target="window"><img id="ciw-web" src="images/OracleJavaSE7Prog.jpg" alt="Oracle Java SE 7 Programmer 1" title="Oracle Java SE 7 Programmer 1" style="width:90px; height:40px; border: 0;"></a></div>	
+					
+			<div><a href="http://certification.comptia.org/getCertified/certifications/security.aspx" target="_window"><img id="ciw-web" src="images/Security+_CE_small.jpg" alt="ComptTIA Security+ Certified" title="CompTIA Security+ Certified, February 2015" style="width:90px; height: 40px; border: 0;"/></a></div> 
+				
+			<div> <a href="http://www.ciwcertified.com/" target="_blank"><img id="ciw-web" src="images/ciw-logo.jpg" alt="CIW | Certified Internet Web Professional" title="CIW | Certified Internet Web Professional" style="width:65px; height: 40px; border: 0;"></a></div> 
+			
+			<div> <a href="http:/www.microsoft.com/en-us/learning/mta-certification.aspx" target="_blank"><img id="ciw-web" src="images/Microsoft_logo.jpg" alt="Microsoft MTA Certified" title="Microsoft MTA Certified" style="width:40px; height: 40px; border: 0;"></a></div> 
+			</div>
+			
+			 <div class="certlist"> <h2>IT Certified:</h2>
+				<ul><li>Oracle Java SE 7 Programmer 1 </li>
+					<li>CompTIA Security+ </li>
+					<li>CompTIA Network+ </li>
+					<li>CompTIA Project+ </li>
+					<li>CompTIA A+ </li> 
+					<li>CIW Web Development Professional</li>
+					<li>CIW Perl Specialist </li>
+					<li>CIW Database Design Specialist </li>					
+					<li>CIW JavaScript Specialist </li>
+					<li>CIW Web Design Specialist </li>
+					<li>CIW Web Foundations Associate </li>
+					<li>MTA Software Development Fundamentals</li>					
+					<li>MTA Windows OS Fundamentals</li>
+					<li>MTA Windows Server Administration Fundamentals</li>
+					</ul>
+				
+					<div id="copyright"> Copyright &copy; 2016 Jerome M. Griffith at Pinevergreen Studios. </div> 
+			</div>
+		
+		
+		<div id="social-all">
+			<ul id="social">
+			<!--List for social media links. -->
+			<li> <a class="facebook-button" href="https://www.facebook.com/jerome.m.griffith" target="_blank" alt="Facebook icon" title="Jerome on Facebook"> </a></li> 
+			<li> <a class="linkedin-button" href="http://www.linkedin.com/pub/jerome-griffith/31/3a3/559" target="_blank" alt="LinkedIn icon" title="Jerome on LinkedIn"></a></li>
+			<li> <a class="wordpress-button" href="http://pinevergreenstudios.wordpress.com" target="_blank"  alt="WordPress icon" title="Pinevergreen on Wordpress"></a></li>
+			<li> <a class="youtube-button" href="http://www.youtube.com/watch?v=VWAv4OlD2k4&list=PLEA61A9629E696091"  target="_blank" alt="YouTube icon" title="Jerome on YouTube"> </a></li>
+			<li> <a class="email-button" href="mailto:pinevergreenstudios@gmail.com" target="_blank" alt="email icon" title="Email"> </a></li>
+			</ul>
+			
+			
+		<div id="sitelock"> 
+			<a href="#" onclick="window.open('https://www.sitelock.com/verify.php?site=pinevergreenstudios.com','SiteLock','width=600,height=600,left=160,top=170');" >
+			<img alt="website security" title="SiteLock"  src="//shield.sitelock.com/shield/pinevergreenstudios.com"/>
+			</a>
+		</div>
+				
+		</div> 
+
+	</div> 
+		
+	</footer>
+	
+		
+</body>
+</html>
